@@ -7,7 +7,7 @@ try{
     $pdo = new PDO($dns, $dbuser, $dbpass);
 
 } catch(PDOException $e) {
-    echo "ERRO: ".$e->getMassage();
+    echo "ERRO: ".$e->getMessage();
 }
 
 if(isset($_GET['ordem']) && !empty($_GET['ordem'])){
